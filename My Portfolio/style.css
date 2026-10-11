@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.first-page-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+    min-height: auto;
+}
+
+.second-page-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0 0;
+    min-height: auto;
+}
+
+.header-card {
+    background-color: #6da252;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border: 2px solid white;
+}
+
+.header-card h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.header-card p {
+    font-size: 19px;
+    opacity: 0.95;
+}
+
+.card {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 22px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul li {
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+th {
+    background-color: #6da252;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background-color: #f7faf5;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: white;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #6da252;
+    box-shadow: 0 0 0 2px rgba(109, 162, 82, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-submit {
+    background-color: #6da252;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #5a8a43;
+}
+
+footer {
+    background-color: #6da252;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .first-page-screen {
+        gap: 16px;
+    }
+
+    .second-page-screen {
+        gap: 16px;
+        padding-top: 16px;
+    }
+
+    .header-card {
+        padding: 20px 12px;
+    }
+
+    .profile-img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .header-card h1 {
+        font-size: 28px;
+    }
+
+    .header-card p {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    table {
+        min-width: 500px;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+}
